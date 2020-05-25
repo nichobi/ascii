@@ -5,7 +5,7 @@ main = do
   pre    <- readFile "pre.html"
   ascii  <- readFile "ascii.txt"
   post   <- readFile "post.html"
-  outH   <- openFile "out.html"  WriteMode
+  outH   <- openFile "ascii.html" WriteMode
   mapM   (hPutStr outH) [pre, htmlEscape ascii, post]
   hClose outH
 
