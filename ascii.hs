@@ -1,3 +1,5 @@
+#!/usr/bin/env runhaskell
+
 import System.IO
 main = do
   pre       <- readFile "pre.html"
