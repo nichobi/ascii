@@ -1,0 +1,20 @@
+server {
+    listen         80;
+    server_name    ascii.isacsson.se;
+    return         301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name ascii.isacsson.se;
+
+    include /etc/nginx/ssl.conf;
+    access_log /var/log/nginx/ascii.isacsson.se.log;
+    error_log /var/log/nginx/ascii.isacsson.se.error.log;
+    root /www/ascii;
+    index ascii.html;
+    location / {
+	      try_files $uri $uri/ =404;
+    }
+
+}
