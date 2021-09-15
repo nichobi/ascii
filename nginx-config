@@ -1,16 +1,16 @@
 server {
     listen         80;
-    server_name    ascii.isacsson.se;
+    server_name    ascii.nichobi.com;
     return         301 https://$host$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name ascii.isacsson.se;
+    server_name ascii.nichobi.com;
 
     include /etc/nginx/ssl.conf;
-    access_log /var/log/nginx/ascii.isacsson.se.log;
-    error_log /var/log/nginx/ascii.isacsson.se.error.log;
+    access_log /var/log/nginx/ascii.nichobi.com.log;
+    error_log /var/log/nginx/ascii.nichobi.com.error.log;
     root /www/ascii;
     index ascii.html;
     location / {
