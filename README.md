@@ -1,3 +1,6 @@
+# Archived
+This repository has been merged into the [repository of my main website](https://github.com/nichobi/website), with all history preserved. Please see that repository for future updates. 
+
 # [nichobi's ascii art](https://ascii.nichobi.com)
 
 This is an archive of my ascii art, along with a simple script to turn the file into a simple HTML website. A live version is available at [ascii.nichobi.com](https://ascii.nichobi.com)
